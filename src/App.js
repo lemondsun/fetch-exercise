@@ -1,6 +1,10 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import { getData } from './services/api-helper';
+import ListDisplayOne from './components/ListDisplayOne';
+import ListDisplayTwo from './components/ListDisplayTwo';
+import ListDisplayThree from './components/ListDisplayThree';
+import ListDisplayFour from './components/ListDisplayFour';
 
 function App() {
   const [allItems, setAllItems] = useState([]);
@@ -13,19 +17,10 @@ function App() {
 
   return (
     <div className="App">
-      
-      <div>
-    <h1>LIST ONE</h1>
-      <div class="grid-container">
-        {/* */}
-        {
-          allItems.map((x) =>
-          {
-            if (x.listId === 1 && x.name !== null && x.name !== "") { return <p>{x.name}</p> }
-      })
-        }
-        </div>
-        </div>
+      <ListDisplayOne list={allItems} />
+      <ListDisplayTwo list={allItems} />
+      <ListDisplayThree list={allItems} />
+      <ListDisplayFour list={allItems} />
       
     </div>
   );
