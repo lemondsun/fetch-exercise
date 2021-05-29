@@ -1,13 +1,40 @@
+.logo{
+  width: 10vw;
+  margin: 5vh 45vw;
+}
 
+#project-title{
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  color: #310C39;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
+  gap: 10px 10px;
   grid-template-areas:
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . ."
     ". . . . . . .";
+}
+
+.list-container {
+  background-color: gray;
+  margin: 5vh 10vw;
+  text-align: center;
+  border-radius: 20px;
+  padding-bottom: 2vh;
+}
+
+.item-box {
+  background-color: white;
+  margin: 2.5%;
+}
+
+.list-title{
+  color:#FBA91B;
+  font-family: 'Helvetica Neue';
 }

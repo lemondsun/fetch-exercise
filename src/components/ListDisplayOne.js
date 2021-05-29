@@ -2,13 +2,14 @@ import React from 'react'
 
 export default function ListDisplayOne(props) {
   return (
-    <div>
-    <h1>LIST ONE</h1>
+    <div class='list-container'>
+    <h1 class='list-title'>LIST ONE</h1>
       <div class="grid-container">
         {
+          //Here I map all items and display only the items with the correct list id and name requirements.
           props.list.map((x) =>
           {
-            if (x.listId === 1 && x.name !== null && x.name !== "") { return <p>{x.name}</p> }
+            if (x.listId === 1 && x.name !== null && x.name !== "") { return <div class='item-box'><p>{x.name}</p></div> }
       })
         }
         </div>
