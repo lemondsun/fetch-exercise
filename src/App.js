@@ -6,6 +6,7 @@ import ListDisplayOne from './components/ListDisplayOne';
 import ListDisplayTwo from './components/ListDisplayTwo';
 import ListDisplayThree from './components/ListDisplayThree';
 import ListDisplayFour from './components/ListDisplayFour';
+import Header  from './components/Header'
 
 function App() {
   const [allItems, setAllItems] = useState([]);
@@ -18,8 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <img class='logo' src={logo} alt='company-emblem' />
-      <h1 id='project-title'>Coding Excercise</h1>
+      <Header logo={logo} />
       <ListDisplayOne list={allItems} />
       <ListDisplayTwo list={allItems} />
       <ListDisplayThree list={allItems} />

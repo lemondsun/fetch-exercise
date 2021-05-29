@@ -1,3 +1,6 @@
+.header {
+  border-bottom: 3px solid #310C39;
+}
 .logo{
   width: 10vw;
   margin: 5vh 45vw;
@@ -37,4 +40,32 @@
 .list-title{
   color:#FBA91B;
   font-family: 'Helvetica Neue';
+}
+
+/*----- media queries -----*/
+
+@media(max-width: 575px) {
+
+  .logo{
+    width: 20vw;
+    margin: 5vh 40vw;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . ."
+      ". . .";
+      overflow: scroll;
+      height: 50vh;
+  }
 }
