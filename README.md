@@ -15,6 +15,6 @@ npm i axios
 ```
 import axios
 
-
+replace ${process.env.REACT_APP_API} with the given project api
 ```
 
