@@ -1,5 +1,5 @@
 import axios from 'axios'
-// uses a heroku app to solve CORS 
+// here I use a heroku app to solve CORS 
 const baseURL = `https://radiant-bastion-31447.herokuapp.com/${process.env.REACT_APP_API}`;
 const api = axios.create({
   baseURL: baseURL,
